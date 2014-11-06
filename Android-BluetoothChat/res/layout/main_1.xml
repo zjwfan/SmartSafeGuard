@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/in"
+            android:layout_below="@+id/textView1"
+            android:orientation="vertical" >
+
+            <TableRow android:layout_width="wrap_content" >
+
+                <TextView
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text=" 电	灯"
+                    android:textSize="15pt" />
+
+                <RadioGroup
+                    android:id="@+id/Light"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/Light_Open"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="   开" 
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/Light_Close"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="   关"
+                        android:textSize="20dp" />
+
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text=" 窗	户"
+                    android:textSize="15pt" />
+
+                <RadioGroup
+                    android:id="@+id/Window"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/Window_Open"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="   开" 
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/Window_Close"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="   关" 
+                        android:textSize="20dp" />
+                </RadioGroup>
+
+            </TableRow>
+            
+            
+ 				<TableRow>
+ 				<TextView
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:text=" 显	示"
+                android:textSize="15pt" 
+                />
+ 				
+            <RadioGroup
+                android:id="@+id/Display"
+                android:orientation="horizontal" >
+
+                 <RadioButton
+                android:id="@+id/Display_Open"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="   开" 
+                android:textSize="20dp" />/>
+                 
+                <RadioButton
+                    android:id="@+id/Display_Close"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="   关" 
+                    android:textSize="20dp" />/>
+            </RadioGroup>
+            
+			</TableRow>
+
+ 			<TableRow>
+ 			     <TextView
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:text=" 加	湿"
+                android:textSize="15pt" />
+ 			     
+ 				<Button
+ 				    android:id="@+id/WetChange"
+ 				    android:layout_width="wrap_content"
+ 				    android:layout_height="wrap_content"
+ 				    android:text="关" />
+	
+			
+			</TableRow>
+			
+ 			 <TextView
+ 			     android:id="@+id/show"
+ 			     android:layout_width="wrap_content"
+ 			     android:layout_height="30dp"
+ 			     android:layout_weight="29"
+ 			     android:text=" "
+ 			     android:textSize="30sp" />
+ 			 
+        </TableLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="蓝牙窗口" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cold_play" />
+
+    <EditText
+        android:id="@+id/edit_text_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/button_send"
+        android:layout_weight="1"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    
+    <!-- 删除显示框  -->
+    
+ 	<ListView
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/imageView1"
+        android:layout_alignParentBottom="false"
+        android:layout_marginBottom="50dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" >
+    </ListView> 
+   	
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_text_out"
+        android:layout_alignBottom="@+id/edit_text_out"
+        android:layout_alignParentRight="true"
+        android:text="@string/send" />
+
+</RelativeLayout>

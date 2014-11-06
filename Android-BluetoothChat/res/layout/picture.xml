@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    <!-- 定义显示图片整体的ImageView -->
+
+    <ImageView
+        android:id="@+id/cold_play"
+        android:layout_width="fill_parent"
+        android:layout_height="240px"
+        android:layout_weight="0.02"
+        android:background="#0000ff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cold_play" />
+    <!-- 定义显示图片局部细节的ImageView -->
+
+</LinearLayout>

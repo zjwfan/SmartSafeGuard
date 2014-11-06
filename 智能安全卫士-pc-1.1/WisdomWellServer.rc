@@ -1,0 +1,723 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WisdomWellServer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\icon2.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\文件名.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\icon3.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 210, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Intelligent Security Guard"
+FONT 9, "宋体"
+BEGIN
+    CTEXT           "Intelligent Security Guard 1.0 版",IDC_STATIC,21,56,164,
+                    8,SS_CENTERIMAGE
+    CTEXT           "ColdPlay小组 荣誉出品",IDC_STATIC,60,72,85,8
+    DEFPUSHBUTTON   "确定",IDOK,77,91,50,14,WS_GROUP
+    CONTROL         150,IDC_STATIC,"Static",SS_BITMAP,6,21,197,23
+END
+
+IDD_WISDOMWELLSERVER_DIALOG DIALOGEX 0, 0, 213, 254
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Intelligent Security Guard"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP,0,0,213,241
+    GROUPBOX        "室内环境信息",IDC_STATIC_1,3,65,93,64,WS_TABSTOP
+    GROUPBOX        "门禁记录信息",IDC_STATIC_2,105,65,93,64,WS_TABSTOP
+    GROUPBOX        "当前时间",IDC_STATIC_3,3,137,195,26,WS_TABSTOP,
+                    WS_EX_TRANSPARENT
+    LTEXT           "温度：",IDC_STATIC,13,85,25,8,NOT WS_GROUP | WS_TABSTOP,
+                    WS_EX_TRANSPARENT
+    CTEXT           "20.3  ℃",IDC_REALTEMPERATURE,39,85,35,10,
+                    SS_CENTERIMAGE | WS_BORDER | NOT WS_GROUP | WS_TABSTOP,
+                    WS_EX_TRANSPARENT
+    LTEXT           "湿度：",IDC_STATIC,13,99,25,8,NOT WS_GROUP | WS_TABSTOP,
+                    WS_EX_TRANSPARENT
+    CTEXT           "65%",IDC_REALHUMIDITY,39,99,35,10,SS_NOTIFY | WS_BORDER | 
+                    NOT WS_GROUP | WS_TABSTOP,WS_EX_TRANSPARENT
+    LTEXT           "可燃气体浓度：",IDC_STATIC,13,113,57,8,NOT WS_GROUP | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    CTEXT           "安全",IDC_REALCONCENTRATION,71,113,21,10,SS_NOTIFY | 
+                    WS_BORDER | NOT WS_GROUP | WS_TABSTOP,WS_EX_TRANSPARENT
+    LTEXT           "日访问数：",IDC_STATIC,115,85,41,8,NOT WS_GROUP | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    CTEXT           "19次",IDC_EMPCURRENT,162,92,21,10,SS_NOTIFY | WS_BORDER | 
+                    NOT WS_GROUP | WS_TABSTOP,WS_EX_TRANSPARENT
+    LTEXT           "日进入次数：",IDC_STATIC,115,107,49,8,NOT WS_GROUP | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    CTEXT           "0次",IDC_EMPCROSS,162,116,21,10,SS_NOTIFY | WS_BORDER | 
+                    NOT WS_GROUP | WS_TABSTOP,WS_EX_TRANSPARENT
+    CTEXT           "2014年5月20日 上午 10:20:24",IDC_NOWTIME,13,147,110,11,
+                    SS_CENTERIMAGE | NOT WS_GROUP | WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    CTEXT           "运行中",IDC_NOWWORKSTATUS,159,149,25,8,NOT WS_GROUP | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    GROUPBOX        "设备状态",IDC_DEVICESTATUSGROUP,185,7,13,15,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "安全门状态：",IDC_STATIC,146,18,49,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           " 1",IDC_STATIC,187,18,8,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           " 2",IDC_STATIC,187,18,8,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           " 3",IDC_STATIC,187,18,8,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           " 4",IDC_STATIC,187,18,8,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "人行门状态：",IDC_STATIC,146,18,49,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    GROUPBOX        "位置信息",IDC_POSITIONGROUP,165,1,30,25,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "卷扬机：",IDC_STATIC,162,18,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    GROUPBOX        "产量统计",IDC_STATIC,152,17,43,9,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "今日产量：",IDC_STATIC,154,18,41,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "15667.5kg",IDC_DAILYYIELD,158,18,37,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "载矿",IDC_CARSTATUS,178,18,17,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "上行",IDC_CARDIRECT,178,18,17,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "1200kg/1150kg",IDC_NOWCARWEIGHT,142,18,53,8,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "本月日均：",IDC_STATIC,154,18,41,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "18755.5kg",IDC_AVGYIELD,158,18,37,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "员工人数：",IDC_STATIC,154,18,41,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "23人",IDC_EMPTOTAL,178,18,17,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "应在人数：",IDC_STATIC,154,18,41,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "21人",IDC_EMPSHOULDBE,178,18,17,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "缺勤：",IDC_STATIC,170,18,25,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "1人",IDC_EMPABSENCE,182,18,13,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "请假：",IDC_STATIC,170,18,25,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "2人",IDC_EMPLEAVE,182,18,13,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "",IDC_MSCOMM,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,170,1,25,25
+    PUSHBUTTON      "TEST",IDC_BTN_TEST_COMM,145,12,50,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "速度",IDC_CARSpeed,193,8,17,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "100M/S",IDC_NOWCARSPEED,158,18,37,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "方向",IDC_CARDIRECT2,178,18,17,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "area_A",IDC_CARArea0,170,18,25,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "area_B",IDC_CARArea1,170,18,25,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "area_B_C",IDC_CARArea2,162,18,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "area_C",IDC_CARArea3,185,13,25,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "area_D",IDC_CARArea4,185,9,25,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "关闭",IDC_SafeDoor0,179,18,16,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "关闭",IDC_SafeDoor1,179,18,16,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "关闭",IDC_SafeDoor2,179,18,16,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "关闭",IDC_SafeDoor3,179,18,16,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "关闭",IDC_SafeDoor4,179,18,16,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "关闭",IDC_SafeDoor5,179,18,16,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "100M/S",IDC_NOWCARSPEED2,158,18,37,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "斜井通道状态：",IDC_STATIC,154,11,57,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "空闲中",IDC_CrossingStatus,154,13,57,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "安全门1",IDC_STATIC,164,18,31,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           " 安全门2",IDC_STATIC,162,18,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "安全门3",IDC_STATIC,166,18,29,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "安全门4",IDC_STATIC,166,18,29,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+IDD_EMPLOYEE DIALOG DISCARDABLE  0, 0, 415, 231
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "信息管理"
+FONT 12, "宋体"
+BEGIN
+    GROUPBOX        "查询",IDC_STATIC,16,14,241,26,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "姓名：",IDC_STATIC,23,27,25,9,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDITSEARCHBYNAME,50,24,49,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "工号：",IDC_STATIC,107,27,25,9,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDITSEARCHBYNUM,134,24,51,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "查询",IDC_BTNSEARCH,192,24,50,12,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "删除",IDC_BTNDELETE,203,154,50,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "List1",IDC_LISTEMPLOYEEVIEW,"SysListView32",NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_BORDER | WS_TABSTOP,16,46,
+                    239,101
+    PUSHBUTTON      "修改",IDC_BTNMODIFY,203,169,50,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "添加",IDC_BTNADD,203,184,50,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    GROUPBOX        "操作",IDC_STATIC,17,148,239,53,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "工号：",IDC_STATIC,20,158,25,9,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDITNUM,47,155,49,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "性别：",IDC_STATIC,20,172,25,9,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDITSEX,47,169,49,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "姓名：",IDC_STATIC,110,158,25,9,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDITNAME,137,155,49,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "年龄：",IDC_STATIC,110,172,25,9,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDITAGE,137,169,49,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "状态：",IDC_STATIC,20,188,25,9,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDITSTATUS,47,185,24,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "请假",IDC_BTNLEAVE,75,184,35,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "",IDC_SEPERATOR,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,
+                    264,7,1,217
+    PUSHBUTTON      "记录>>",IDC_BTNRECORD,220,205,35,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "List2",IDC_LISTCARDRECORD,"SysListView32",NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_BORDER | WS_TABSTOP,269,18,
+                    132,138
+    LTEXT           "2014年5月19日",IDC_DAILY,16,209,55,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "上午",IDC_DURING,75,209,20,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "11:15:36",IDC_REALTIME,97,209,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "3:35:40",IDC_WORKTIME,183,209,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "工作时长：",IDC_STATIC,136,209,42,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "DateTimePicker1",IDC_DPSTART,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,269,167,63,15
+    PUSHBUTTON      "查寻",IDC_BTNSEARCHCARD,341,204,59,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "DateTimePicker1",IDC_DPEND,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,270,186,63,15
+    EDITTEXT        IDC_EDITSTART,347,168,40,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDITEND,347,187,40,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "时",IDC_STATIC,394,171,8,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "时",IDC_STATIC,394,189,8,8,NOT WS_VISIBLE | WS_DISABLED
+END
+
+IDD_SETTINGDLG DIALOG DISCARDABLE  0, 0, 253, 153
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 12, "宋体"
+BEGIN
+    GROUPBOX        "报警设置",IDC_STATIC,7,7,108,60
+    LTEXT           "温度：",IDC_STATIC,10,20,25,8
+    EDITTEXT        IDC_MAXTEMP,35,18,40,14,ES_AUTOHSCROLL
+    LTEXT           "可燃气体浓度：",IDC_STATIC,9,36,57,8
+    EDITTEXT        IDC_MAXGAS,66,34,32,14,ES_AUTOHSCROLL
+    LTEXT           "远程报警号码：",IDC_STATIC,10,52,57,8
+    EDITTEXT        IDC_PHONENUM,67,50,44,14,ES_AUTOHSCROLL
+    LTEXT           "允许放行载重：",IDC_STATIC,123,17,57,8
+    EDITTEXT        IDC_SAFEWEIGHT,180,15,40,14,ES_AUTOHSCROLL
+    LTEXT           "安全门密码：",IDC_STATIC,123,33,49,8
+    EDITTEXT        IDC_PASSWORD,180,31,53,14,ES_AUTOHSCROLL
+    LTEXT           "采样时间间隔：",IDC_STATIC,123,49,57,8
+    EDITTEXT        IDC_TIMEDIFF,180,47,38,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker2",IDC_CURRDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,39,71,52,12
+    LTEXT           "日期：",IDC_STATIC,11,73,25,8
+    LTEXT           "时间：",IDC_STATIC,130,73,24,8
+    EDITTEXT        IDC_REALTIME_HOUR,157,70,15,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC,174,73,9,8
+    EDITTEXT        IDC_REALTIME_MIN,185,70,14,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC,201,73,9,8
+    EDITTEXT        IDC_REALTIME_SEC,212,70,14,14,ES_AUTOHSCROLL
+    LTEXT           "秒",IDC_STATIC,228,73,9,8
+    GROUPBOX        "考勤",IDC_STATIC,7,85,233,40
+    LTEXT           "上午",IDC_STATIC,14,101,17,8
+    EDITTEXT        IDC_TIMEMORONHOUR,60,93,15,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC,77,96,9,8
+    EDITTEXT        IDC_TIMEMORONMIN,88,93,14,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC,104,96,9,8
+    EDITTEXT        IDC_TIMEMOROFFHOUR,60,108,15,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC,77,111,9,8
+    EDITTEXT        IDC_TIMEMOROFFMIN,88,108,14,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC,104,111,9,8
+    LTEXT           "上班：",IDC_STATIC,33,95,25,8
+    LTEXT           "下班：",IDC_STATIC,33,111,25,8
+    LTEXT           "下午",IDC_STATIC,123,101,17,8
+    EDITTEXT        IDC_TIMEAFTONHOUR,169,93,15,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC,186,96,9,8
+    EDITTEXT        IDC_TIMEAFTONMIN,197,93,14,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC,213,96,9,8
+    EDITTEXT        IDC_TIMEAFTOFFHOUR,169,108,15,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC,186,111,9,8
+    EDITTEXT        IDC_TIMEAFTOFFMIN,197,108,14,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC,213,111,9,8
+    LTEXT           "上班：",IDC_STATIC,142,95,25,8
+    LTEXT           "下班：",IDC_STATIC,142,111,25,8
+    LTEXT           "卷扬机转速：",IDC_STATIC,8,131,49,8
+    EDITTEXT        IDC_VMECHINE,58,128,40,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC,221,50,9,8
+    LTEXT           "千克",IDC_STATIC,223,18,17,8
+    LTEXT           "%",IDC_STATIC,99,36,8,8
+    LTEXT           " ℃",IDC_STATIC,77,21,11,8
+    PUSHBUTTON      "确定",IDC_BTN_OK,129,128,50,14
+    PUSHBUTTON      "取消",IDC_BTN_CANCEL,189,128,50,14
+END
+
+IDD_LOGINDLG DIALOG DISCARDABLE  0, 0, 138, 120
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "身份验证"
+FONT 12, "宋体"
+BEGIN
+    LTEXT           "用户名：",IDC_STATIC,22,33,33,8
+    EDITTEXT        IDC_USERNAME,56,30,48,14,ES_AUTOHSCROLL
+    LTEXT           "密码：",IDC_STATIC,22,53,25,8
+    EDITTEXT        IDC_UPASSWORD,56,50,48,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "验证码：",IDC_STATIC,22,73,33,8
+    EDITTEXT        IDC_EDITVERIFY,56,70,26,14,ES_AUTOHSCROLL
+    LTEXT           "身份验证",IDC_STATIC,46,14,33,8
+    PUSHBUTTON      "确认",IDC_BTNOK,17,91,50,14
+    PUSHBUTTON      "取消",IDC_BTNCANCEL,75,90,50,14
+    CONTROL         "",IDC_VERIFY,"Static",SS_BLACKFRAME | SS_NOTIFY,88,69,
+                    35,14
+END
+
+IDD_SYS_LOG DIALOG DISCARDABLE  0, 0, 225, 179
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "系统日志"
+FONT 12, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LSTSYSLOG,"SysListView32",WS_BORDER | 
+                    WS_TABSTOP,7,39,211,68
+    GROUPBOX        "时间",IDC_STATIC,7,7,211,28
+    CONTROL         "DateTimePicker1",IDC_DPSTART,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,73,17,48,15
+    CONTROL         "DateTimePicker1",IDC_DPEND,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,137,17,48,15
+    PUSHBUTTON      "查询",IDC_BTNSEARCH,188,18,24,14
+    LTEXT           "至",IDC_STATIC,124,22,9,8
+    CONTROL         "按时间查找",IDC_CHKTIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,20,56,10
+    LTEXT           "错误原因：",IDC_STATIC,13,123,41,8
+    LTEXT           "系统响应：",IDC_STATIC,13,145,41,8
+    LTEXT           "故障代码：",IDC_STATIC,13,112,41,8
+    LTEXT           "0x0000021",IDC_ERRCODE,55,112,37,8
+    LTEXT           "矿车上行在位置4跑车",IDC_ERRRESON,55,123,163,18
+    LTEXT           "关闭所有安全门，语音报警器报警，停止卷扬机",IDC_ERRDEAL,
+                    55,145,163,18
+END
+
+IDD_SAMPLINGDLG DIALOG DISCARDABLE  0, 0, 247, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "温湿度采样记录"
+FONT 12, "宋体"
+BEGIN
+    GROUPBOX        "时间",IDC_STATIC,7,7,233,42
+    CONTROL         "List1",IDC_LSTSAMPLING,"SysListView32",WS_BORDER | 
+                    WS_TABSTOP,7,52,233,80
+    LTEXT           "时间：",IDC_STATIC,13,139,25,8
+    LTEXT           "温度：",IDC_STATIC,13,151,25,8
+    LTEXT           "湿度：",IDC_STATIC,13,163,25,8
+    LTEXT           "可燃性气体浓度：",IDC_STATIC,13,175,65,8
+    LTEXT           "2014-5-21 12:20:00",IDC_STCTIME,38,140,63,8
+    LTEXT           "1.7%",IDC_STCWE,38,162,31,8
+    LTEXT           "25.3",IDC_STCTEMP,38,151,37,8
+    LTEXT           "1.7%",IDC_STCGAS,82,175,25,8
+    LTEXT           "平均温度：",IDC_STATIC,124,152,41,8
+    LTEXT           "平均湿度：",IDC_STATIC,124,164,41,8
+    LTEXT           "平均可燃性气体浓度：",IDC_STATIC,124,176,81,8
+    LTEXT           "1.7%",IDC_STCAVEWE,165,163,36,8
+    LTEXT           "25.3",IDC_STCAVGTEMP,165,152,54,8
+    LTEXT           "1.7%",IDC_STCAVGGAS,209,176,24,8
+    CONTROL         "按时间查询",IDC_CHKTIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,17,53,10
+    CONTROL         "DateTimePicker1",IDC_DPSTART,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,66,14,55,15
+    CONTROL         "DateTimePicker1",IDC_DPEND,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,66,32,55,15
+    EDITTEXT        IDC_EDITSTART,125,14,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITEND,125,32,20,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC,148,17,9,8
+    LTEXT           "时",IDC_STATIC,148,35,9,8
+    PUSHBUTTON      "查询",IDC_BTNSEARCH,168,15,66,29
+END
+
+IDD_CAR_RECORDDLG DIALOG DISCARDABLE  0, 0, 247, 204
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "门禁记录"
+FONT 12, "宋体"
+BEGIN
+    GROUPBOX        "时间",IDC_STATIC,7,7,233,42
+    CONTROL         "按时间查询",IDC_CHKTIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,17,53,10
+    CONTROL         "DateTimePicker1",IDC_DPSTART,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,66,14,55,15
+    CONTROL         "DateTimePicker1",IDC_DPEND,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,66,32,55,15
+    EDITTEXT        IDC_EDITSTART,125,14,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITEND,125,32,20,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC,148,17,9,8
+    LTEXT           "时",IDC_STATIC,148,35,9,8
+    PUSHBUTTON      "查询",IDC_BTNSEARCH,168,15,66,29
+    CONTROL         "List1",IDC_LSTCAR,"SysListView32",WS_BORDER | 
+                    WS_TABSTOP,7,52,233,80
+    LTEXT           "时间：",IDC_STATIC,13,139,25,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "净重：",IDC_STATIC,13,151,25,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "毛重：",IDC_STATIC,13,163,25,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "2014-5-21 12:20:00",IDC_STCTIME,38,140,63,8,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "1.7%",IDC_STCWEIGHT,38,162,39,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "25.3",IDC_STCYWEIGHT,38,151,48,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "平均净重：",IDC_STATIC,126,167,41,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "平均毛重：",IDC_STATIC,126,179,41,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "1.7%",IDC_STCAVGWEIGHT,167,178,57,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "25.3",IDC_STCAVEYWEIGHT,167,167,35,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "总重：",IDC_STATIC,126,141,25,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "车次：",IDC_STATIC,126,153,25,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "31",IDC_STCCARNUM,153,152,27,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "25.3",IDC_STCTOTALWEIGHT,153,141,42,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+IDD_MODIFYDLG DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,29,77,50,14
+    PUSHBUTTON      "取消",IDCANCEL,98,77,50,14
+    LTEXT           "新的用户名：",IDC_STATIC,26,16,49,8
+    EDITTEXT        IDC_NEWUSERNAME,80,14,40,14,ES_AUTOHSCROLL
+    LTEXT           "新的密码：",IDC_STATIC,26,35,41,8
+    EDITTEXT        IDC_NEWPASSWORD,80,33,40,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "确认密码：",IDC_STATIC,26,54,41,8
+    EDITTEXT        IDC_SUREPASSWORD,80,52,40,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "WisdomWellServer Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "WisdomWellServer\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "WisdomWellServer.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "WisdomWellServer 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_WISDOMWELLSERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    IDD_EMPLOYEE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 408
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_SETTINGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_LOGINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 131
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_SYS_LOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_SAMPLINGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_CAR_RECORDDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_MODIFYDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "查看"
+    BEGIN
+        MENUITEM "系统日志",                    IDM_SYS_LOG
+        MENUITEM "采样记录",                    IDM_SAMPLING_RECORD
+        MENUITEM "门禁记录",                    IDM_CARRECORD
+    END
+    POPUP "设置"
+    BEGIN
+        MENUITEM "修改密码",                    IDM_MODIFY_PASSWD
+        MENUITEM "参数设置",                    IDM_PARAM_SETTING
+        MENUITEM "关于",                        IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_WISDOMWELLSERVER_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0001, 0x0002, 0x0400, 
+0x0000, 0x0200, 0x0001, 0xc200, 0x0001, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0004, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\bitmap5.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 WisdomWellServer(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\WisdomWellServer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

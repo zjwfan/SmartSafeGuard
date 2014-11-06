@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.example.android.BluetoothChat"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk minSdkVersion="2" />
+    
+    <!-- 因为发短信改到过4 现在因为滑动 改动到3 -->
+    <!-- 获取网络操作权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    	
+    	
+    	<!--	接收短信权限		-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+        
+        <!-- 授予发送短信的权限 -->
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+    
+    
+	<!-- 获取网络操作权限 -->
+	
+	
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/app_icon" >
+                 
+        <activity android:name=".BluetoothChat"
+                  android:label="@string/app_name"
+                  android:configChanges="orientation|keyboardHidden" 
+                  
+                  android:windowSoftInputMode="stateHidden" 
+                  >
+            <!--	android:configChanges="orientation|keyboardHidden" 
+            	当横竖屏切换的时候会直接调用onCreate方法中的onConfigurationChanged方法，
+                               而不是重新执行onCreate方法，如果没有使用这个属性就会重新调用onCreate方法了。  !-->
+         
+            <!-- android:windowSoftInputMode="stateHidden" 或者android:windowSoftInputMode="stateUnchanged"
+					              
+					1、//隐藏软键盘   
+					((InputMethodManager)getSystemService(INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(WidgetSearchActivity.this.getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);   
+					  
+					2、//显示软键盘,控件ID可以是EditText,TextView   
+					((InputMethodManager)getSystemService(INPUT_METHOD_SERVICE)).showSoftInput(控件ID, 0); 
+					 
+					3、不自动弹出键盘：
+					带有EditText控件的在第一次显示的时候会自动获得focus，并弹出键盘，如果不想自动弹出键盘，有两种方法：
+					方法一：在mainfest文件中把对应的activity设置
+					android:windowSoftInputMode="stateHidden" 或者android:windowSoftInputMode="stateUnchanged"。
+					方法二：可以在布局中放一个隐藏的TextView，然后在onCreate的时候requsetFocus。
+					注意TextView不要设置Visiable=gone，否则会失效
+					，可以在布局中放一个隐藏的TextView，然后在onCreate的时候requsetFocus。
+					注意TextView不要设置Visiable=gone，否则会失效
+					<TextView
+					        android:id="@+id/text_notuse"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:focusable="true"
+					        android:focusableInTouchMode="true"
+					        />
+					 
+					TextView textView = (TextView)findViewById(R.id.text_notuse);
+					            textView.requestFocus();
+					              !-->
+              
+              
+               <!-- 设置最先启动的程序,要启动哪个Activity就把下面的代码复制到指定的位置 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- 设置最先启动的程序,要启动哪个Activity就把下面的代码复制到指定的位置 -->
+            
+          
+        </activity>
+
+    
+        
+		
+		<!--	接收短信权限		-->
+		<receiver android:name="SmsReceiver">			
+			<intent-filter android:priority="20">
+				<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+			</intent-filter>
+		</receiver>
+	
+
+
+        
+        
+        <!-- 发送短信权限 -->
+    
+       
+        
+        
+        
+        
+        <activity android:name=".DeviceListActivity"
+                  android:label="@string/select_device"
+                  android:theme="@android:style/Theme.Dialog"/>
+                  
+                  <!--	默认键盘开启  -->
+                 <!-- android:configChanges="orientation|keyboardHidden" -->
+
+        	
+    </application>
+</manifest>

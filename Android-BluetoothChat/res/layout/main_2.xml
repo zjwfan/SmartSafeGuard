@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cold_play" />
+     
+     <EditText
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:lines="2" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="26dp"
+        android:text="蓝牙发送" />
+
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="短信窗口" />
+<!--  
+    <Button
+        android:id="@+id/send"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ExamineFamilyEnvironment"
+        android:layout_alignParentLeft="true"
+        android:text="@string/send" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:lines="2" >
+
+        <requestFocus />
+    </EditText>
+-->
+
+    <Button
+        android:id="@+id/ExamineFamilyEnvironment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:text="查看家庭环境" />
+
+    <Button
+        android:id="@+id/GenerateRandomCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ExamineFamilyEnvironment"
+        android:text="生成随机码" />
+
+    <EditText
+        android:id="@+id/Content_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/GenerateRandomCode"
+        android:ems="10"
+        android:lines="1" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/SetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Content_Password"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Content_Password"
+        android:text="设置密码" />
+    
+</RelativeLayout>
+
+
